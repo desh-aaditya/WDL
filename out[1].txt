@@ -1,0 +1,86 @@
+#include<stdio.h>
+struct bank
+{
+    int acc_no;
+    char name[100];
+    int bal;
+    int inter;
+    int pin;
+    char type;
+}a[100];
+int main()
+{
+    int n,i,j;
+    printf("Enter the number of customers whoose data need to be read : ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("Enter the name of customer : ");
+        scanf("%s",& a[i].name);
+        printf("Enter Account Number : ");
+        scanf("%d",& a[i].acc_no);
+        printf("Enter the balance : ");
+        scanf("%d",& a[i].bal);
+        printf("If you need internet connection press 1 ");
+        printf("\nIf you do not need internet connection press 0 :  ");
+        scanf("%d",& a[i].inter);
+        printf("Enter your postal pin code (422001 to 422013)  : ");
+        scanf("%d",& a[i].pin);
+        printf("If your account is savings = s recurring = r deposit = d : ");
+        scanf("%d",& a[i].type);
+        printf("\n");
+    }
+    for(j=0;j<n;j++)
+    {
+        if(a[j].bal>1000000)
+        {
+            printf("The customer who has Account no : %d is Golden customer",a[j].acc_no);
+        }
+        else if(a[j].bal>500000)
+        {
+            printf("The customer who has Account no : %d is Silver customer",a[j].acc_no);
+        }
+        else if(a[j].bal<500000)
+        {
+            printf("The customer who has Account no : %d is Genenral customer",a[j].acc_no);
+        }
+    }
+    return 0;
+    
+}
+
+
+
+#output
+
+
+Enter the number of customers whoose data need to be read : 3
+Enter the name of customer :Aaditya Deshpande
+Enter Account Number : 698752723652
+Enter the balance : 1000000
+If you need internet connection press 1 
+If you do not need internet connection press 0 :  1
+Enter your postal pin code (422001 to 422013)  : 422001
+If your account is savings = s recurring = r deposit = d : s
+
+Enter the number of customers whoose data need to be read : 3
+Enter the name of customer : Shraddhesh Dalal
+Enter Account Number : 758768253745984
+Enter the balance : 689542
+If you need internet connection press 1 
+If you do not need internet connection press 0 :  0
+Enter your postal pin code (422001 to 422013)  : 422012
+If your account is savings = s recurring = r deposit = d : d
+
+Enter the number of customers whoose data need to be read : 3
+Enter the name of customer : Natanu Shemane
+Enter Account Number : 90532458974598
+Enter the balance : 400520
+If you need internet connection press 1 
+If you do not need internet connection press 0 :  1
+Enter your postal pin code (422001 to 422013)  : 422008
+If your account is savings = s recurring = r deposit = d : s
+
+The customer who has Account no :  is Golden customer
+The customer who has Account no : %d is silver customer
+The customer who has Account no : %d is customer

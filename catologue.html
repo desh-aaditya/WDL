@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Online Book Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+            
+        }
+
+        header {
+            background-color:  rgba(0, 0, 0, 0.388);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        
+        main {
+            padding: 20px;
+        }
+
+        .book-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+
+        .book-table th,
+        .book-table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .book-table th {
+            background-color: #0000005e;
+            color: #000000;
+            text-align: left;
+        }
+
+        .book-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .book-table tr:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 24px;">Catalogue - Online Book Store</h1>
+    </header>
+ 
+    <main>
+        <table class="book-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The war of 1857</td>
+                    <td>VD Sawarkar</td>
+                    <td>History</td>
+                    <td>Rs.400</td>
+                </tr>
+                <tr>
+                    <td>The Silent Patient</td>
+                    <td>Alex Michealides</td>
+                    <td>Mystery</td>
+                    <td>Rs.1250</td>
+                </tr>
+                <tr>
+                    <td>The nun</td>
+                    <td>George Orwell</td>
+                    <td>Dystopian</td>
+                    <td>Rs.900</td>
+                </tr>
+                <tr>
+                    <td>The Catcher in the Rye</td>
+                    <td>J.D. Salinger</td>
+                    <td>Coming-of-Age</td>
+                    <td>Rs.1125</td>
+                </tr>
+                <tr>
+                    <td>Missing</td>
+                    <td>Chetan Bhagat</td>
+                    <td>Romance</td>
+                    <td>Rs.1000</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%); 
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.388);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            padding: 10px 20px;
+            text-align: right;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 18px; 
+            padding: 10px 20px; 
+            border: 1px solid #000000; 
+            border-radius: 5px; 
+        }
+
+        nav ul li a:hover {
+            background-color:black;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .book {
+            flex-basis: 48%;
+            margin-bottom: 20px;
+            border: 3px solid #000;
+            padding: 10px;
+            box-sizing: border-box;
+            
+        }
+
+        .book img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .book-info {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .book-info h4{
+           font-size: 16px;
+        }
+        .book-info button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #000000;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease
+
+        }
+        .book-info .button:hover {
+            background-color: #75dbf2;
+
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 24px;">Online Book Store</h1>
+    </header>
+    <br>
+    <nav>
+        <ul>
+            <li><a href="assignment_7.html">Home</a></li>
+            <li><a href="login_7.html">Login</a></li>
+            <li><a href="catologue.html">Catalogue</a></li>
+            <li><a href="registration.html">Register</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="book">
+                <img src="the indian war.jpeg" alt="Book 1">
+                <div class="book-info">
+                    <h3>The war of 1857</h3>
+                    <p>Author: VD Sawarkar</p>
+                    <p>Genre: History</p>
+                    <h4>Price: Rs.400</h4>
+                    <a href="http://127.0.0.1:5500/book%20buy.html"><button type="submit">BUY</button></a> 
+                </div>
+            </div>
+            <div class="book">
+                <img src="book_2.jpg" alt="Book 2">
+                <div class="book-info">
+                    <h3>The Silent Patient</h3>
+                    <p>Author: Alex Michealides</p>
+                    <p>Genre: Mystery</p>
+                    <h4>Price: Rs.1250</h4>
+                    <a href="http://127.0.0.1:5500/book%20buy.html"><button type="submit">BUY</button></a> 
+                </div>
+            </div>
+            <div class="book">
+                <img src="download.jpeg" alt="Book 1">
+                <div class="book-info">
+                    <h3>One arrange Marraige murder</h3>
+                    <p>Author: Chetan bhagat</p>
+                    <p>Genre:murder</p>
+                    <h4>Price: Rs.300</h4>
+                    <a href="http://127.0.0.1:5500/book%20buy.html"><button type="submit">BUY</button></a> 
+                </div>
+            </div>
+            <div class="book">
+                <img src="download (1).jpeg" alt="Book 1">
+                <div class="book-info">
+                    <h3>Harry potter</h3>
+                    <p>Author: J K Rowling</p>
+                    <p>Genre: Fiction</p>
+                    <h4>Price: Rs.4000</h4>
+                   <a href="http://127.0.0.1:5500/book%20buy.html"><button type="submit">BUY</button></a> 
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
